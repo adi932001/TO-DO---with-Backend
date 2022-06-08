@@ -85,6 +85,6 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-app.listen(7000, function(err) {
+app.listen(process.env.PORT || 7000, function(err) {
   console.log("Server started on port 7000");
 });
